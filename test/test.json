@@ -1,0 +1,36 @@
+{
+	"tasks": {
+		"thread0": {
+			"instance": 1,
+			"runtime": 150,
+			"loop": -1,
+			"sleep": 0,
+			"yield":"",
+			"policy": "SCHED_DEADLINE",
+			"dl-runtime": 400,
+			"dl-period": 1000,
+			"dl-deadline": 1000
+		},
+		"thread2": {
+			"instance": 1,
+			"runtime": 100,
+			"loop": -1,
+			"sleep": 0,
+			"yield": "",
+			"policy": "SCHED_DEADLINE",
+			"dl-runtime": 300,
+			"dl-period": 2000,
+			"dl-deadline": 2000
+		}
+	},
+	"global": {
+		"duration": 6,
+		"calibration": "CPU3",
+		"default_policy": "SCHED_OTHER",
+		"pi_enabled": false,
+		"lock_pages": false,
+		"logdir": "./",
+		"log_basename": "rt-app2",
+		"gnuplot": true
+	}
+}
